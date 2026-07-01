@@ -6,7 +6,7 @@ export const portfolioData = {
   github: "https://github.com/AdityaS-appco",
   linkedin: "https://linkedin.com/in/aditya-singh-524a04360",
   website: "https://rivava.in",
-  profileImage: "/profile.png",
+  profileImage: "/aditya.png",
   summary: "Results-driven Flutter and Full-Stack Developer with over 5 years of hands-on experience building production-ready, cross-platform applications. Expert in crafting responsive interfaces, implementing robust state management, and delivering scalable digital products for global clients and startups.",
 
   skills: {
@@ -57,6 +57,14 @@ export const portfolioData = {
       ]
     }
   ],
+
+  featuredApp: {
+    title: "Rivava+",
+    tagline: "The New Gen Finance App",
+    description: "Exclusive new app now live on Play Store. Experience seamless finance management with cutting-edge UI and robust performance.",
+    link: "https://play.google.com/store/apps/details?id=com.rivava.plus", // Placeholder if specific link not provided
+    tech: ["Flutter", "Riverpod", "SQLite", "Material Design 3"]
+  },
 
   projects: [
     {
