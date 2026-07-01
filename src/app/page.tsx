@@ -3,6 +3,8 @@
 import { Navbar } from "@/components/Navbar";
 import { Hero } from "@/components/Hero";
 import { Section } from "@/components/Section";
+import { ScrollProgress } from "@/components/ScrollProgress";
+import { FeaturedApp } from "@/components/FeaturedApp";
 import { ExperienceCard } from "@/components/ExperienceCard";
 import { ProjectCard } from "@/components/ProjectCard";
 import { SkillBadge } from "@/components/SkillBadge";
@@ -13,6 +15,7 @@ import { motion } from "framer-motion";
 export default function Home() {
   return (
     <main className="bg-black text-white min-h-screen">
+      <ScrollProgress />
       <Navbar />
       <Hero />
 
@@ -30,6 +33,10 @@ export default function Home() {
             <ExperienceCard key={index} {...exp} />
           ))}
         </div>
+      </Section>
+
+      <Section id="featured" title="Exclusive Launch">
+        <FeaturedApp />
       </Section>
 
       <Section id="projects" title="Featured Projects">
