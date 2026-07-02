@@ -3,9 +3,9 @@
 import { motion } from "framer-motion";
 import { ReactNode } from "react";
 
-export const Section = ({ title, children, id }: { title: string, children: ReactNode, id?: string }) => {
+export const Section = ({ title, children, id, className = "" }: { title: string, children: ReactNode, id?: string, className?: string }) => {
   return (
-    <section id={id} className="py-32 bg-black border-t border-white/5">
+    <section id={id} className={`py-32 bg-black border-t border-white/5 ${className}`}>
       <div className="container mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
