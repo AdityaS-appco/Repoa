@@ -15,8 +15,8 @@ export const Hero = () => {
       <motion.div style={{ y: y1, opacity }} className="relative z-10 text-center px-6">
         <div className="relative w-32 h-32 md:w-48 md:h-48 mx-auto mb-8 rounded-full border-2 border-white/10 p-2 overflow-hidden">
           <Image
-            src={portfolioData.profileImage}
-            alt={portfolioData.name}
+            src={"adity.png"}
+            alt={portfolioData.name} 
             fill
             className="object-cover rounded-full grayscale hover:grayscale-0 transition-all duration-700"
             priority
