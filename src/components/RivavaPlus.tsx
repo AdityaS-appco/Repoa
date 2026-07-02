@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { portfolioData } from "@/data/portfolio";
 import { Play } from "lucide-react";
+import Image from "next/image";
 
 export const RivavaPlus = () => {
   const app = portfolioData.rivavaPlus;
@@ -31,6 +32,12 @@ export const RivavaPlus = () => {
                 whileInView={{ x: 0, opacity: 1 }}
                 transition={{ delay: 0.2 }}
               >
+                <div className="flex items-center space-x-4 mb-6">
+                  <div className="relative w-16 h-16 rounded-2xl overflow-hidden bg-white/10 p-2 border border-white/20">
+                    <Image src={app.logo} alt="Rivava Logo" fill className="object-contain" />
+                  </div>
+                  <span className="text-sm font-black tracking-[0.2em] text-blue-400">OFFICIAL APP</span>
+                </div>
                 <h2 className="text-7xl md:text-9xl font-black tracking-tighter mb-4 italic text-blue-500">
                   {app.name}
                 </h2>

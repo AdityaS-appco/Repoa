@@ -52,29 +52,30 @@ export const portfolioData = {
 
   rivavaPlus: {
     name: "Rivava+",
+    logo: "/rivava-logo.png",
     status: "EXCLUSIVE RELEASE",
     tagline: "The New Gen Finance App",
-    description: "Experience the future of financial management. Rivava+ combines Material Design 3 aesthetics with robust real-time analytics and offline synchronization.",
+    description: "Research-first investment platform. Study stocks, funds, and market trends before you invest. Rivava+ brings institutional-grade research to your pocket with Material Design 3 aesthetics.",
     link: "https://play.google.com/store/apps/details?id=com.rivava.plus",
-    tech: ["Flutter", "Riverpod", "SQLite", "Analytics"]
+    tech: ["Flutter", "Riverpod", "SQLite", "Research Hub"]
   },
 
   projects: [
     {
-      title: "Rivava Ecosystem",
-      description: "A 360-degree digital infrastructure including CRM, Web App, and Android deployment.",
-      link: "https://rivava.in",
+      title: "Rivava.in",
+      description: "A premium research-first investment platform focusing on a 'Research -> Learn -> Invest -> Track' user journey.",
+      link: "https://www.rivava.in",
       github: "https://github.com/Rivavainfo"
     },
     {
-      title: "Commercial Fleet (7+ Sites)",
-      description: "Performance-driven frontend architectures for diverse industries (Super Brain, Prime Plast).",
-      link: "#"
+      title: "Financial Calculators",
+      description: "Suite of tools including FD, RD, and Loan calculators deployed for 10k+ monthly users.",
+      link: "https://rivavainfo.github.io/FD-Calculator/"
     },
     {
-      title: "Open Source UI Libraries",
-      description: "Engineered reusable component libraries for the Flutter & React ecosystems.",
-      link: "https://github.com/AdityaS-appco"
+      title: "Automation Infrastructure",
+      description: "Architected specialized proxy networks and custom internal CRM systems for social growth.",
+      link: "#"
     }
   ],
 
