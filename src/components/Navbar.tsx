@@ -1,38 +1,24 @@
 "use client";
 
-import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { portfolioData } from "@/data/portfolio";
 
 export const Navbar = () => {
-  const [scrolled, setScrolled] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 50);
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
   return (
     <motion.nav
       initial={{ y: -100 }}
       animate={{ y: 0 }}
-      className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-        scrolled ? "bg-black/80 backdrop-blur-md py-4 shadow-lg" : "bg-transparent py-6"
-      }`}
+      className="fixed top-0 w-full z-50 mix-blend-difference"
     >
-      <div className="container mx-auto px-6 flex justify-between items-center">
-        <Link href="/" className="text-2xl font-bold tracking-tighter text-white">
-          ADITYA<span className="text-blue-500">.</span>
+      <div className="container mx-auto px-6 py-8 flex justify-between items-center">
+        <Link href="/" className="text-xl font-black tracking-tighter">
+          {portfolioData.name.toUpperCase()}
         </Link>
-        <div className="hidden md:flex space-x-8 text-sm font-medium text-gray-300 uppercase tracking-widest">
-          <Link href="#about" className="hover:text-blue-500 transition-colors">About</Link>
-          <Link href="#experience" className="hover:text-blue-500 transition-colors">Experience</Link>
-          <Link href="#projects" className="hover:text-blue-500 transition-colors">Projects</Link>
-          <Link href="#skills" className="hover:text-blue-500 transition-colors">Skills</Link>
-          <Link href="#contact" className="hover:text-blue-500 transition-colors">Contact</Link>
+        <div className="flex space-x-8 text-xs font-bold tracking-widest uppercase">
+          <Link href="#work" className="hover:opacity-50 transition-opacity">Work</Link>
+          <Link href="#about" className="hover:opacity-50 transition-opacity">About</Link>
+          <Link href="#contact" className="hover:opacity-50 transition-opacity">Contact</Link>
         </div>
       </div>
     </motion.nav>

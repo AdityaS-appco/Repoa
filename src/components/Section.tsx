@@ -3,28 +3,18 @@
 import { motion } from "framer-motion";
 import { ReactNode } from "react";
 
-interface SectionProps {
-  id: string;
-  title: string;
-  children: ReactNode;
-  className?: string;
-}
-
-export const Section = ({ id, title, children, className = "" }: SectionProps) => {
+export const Section = ({ title, children, id }: { title: string, children: ReactNode, id?: string }) => {
   return (
-    <section id={id} className={`py-24 bg-black ${className}`}>
+    <section id={id} className="py-32 bg-black border-t border-white/5">
       <div className="container mx-auto px-6">
         <motion.div
-          initial={{ opacity: 0, x: -20 }}
-          whileInView={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 0.5 }}
-          className="mb-12"
+          className="mb-20"
         >
-          <h2 className="text-sm font-bold tracking-[0.3em] text-blue-500 uppercase mb-2">
-            // {title}
-          </h2>
-          <div className="h-1 w-20 bg-blue-500" />
+          <h2 className="text-sm font-black uppercase tracking-[0.5em] text-blue-500 mb-4">// {title}</h2>
+          <div className="h-px w-full bg-white/10" />
         </motion.div>
         {children}
       </div>
