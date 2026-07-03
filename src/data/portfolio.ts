@@ -7,13 +7,13 @@ export const portfolioData = {
   linkedin: "https://linkedin.com/in/aditya-singh-524a04360",
   website: "https://rivava.in",
   profileImage: "/aditya.png",
-  bio: "Architecting high-performance digital ecosystems with 5+ years of expertise. Specializing in cross-platform mobile apps, automated growth infrastructures, and scalable full-stack web solutions. Delivering production-grade software that bridges the gap between complex engineering and seamless user experience.",
+  bio: "CTO at Rivava. Architecting high-performance financial ecosystems with 5+ years of expertise. Specializing in institutional-grade research platforms, automated growth infrastructures, and cross-platform mobile engineering. Bridging the gap between complex financial logic and seamless user experience.",
 
   skills: {
-    core: ["Flutter", "React", "Next.js", "Node.js", "MERN Stack"],
-    backend: ["Java", "Python", "Supabase", "Firebase", "MongoDB", "SQL"],
-    automation: ["Docker", "Zapier", "Stripe API", "CI/CD", "WebSockets"],
-    design: ["Material Design 3", "Figma", "Tailwind CSS", "Framer Motion"]
+    core: ["Flutter & Dart", "React & Next.js", "Node.js", "MERN Stack"],
+    financial: ["Research Hubs", "DCF Modeling", "Portfolio Tracking", "SMS habit-tracking"],
+    backend: ["Java & Python", "Supabase & Firebase", "MongoDB & SQL", "WebSockets"],
+    devops: ["Docker", "Stripe API", "Zapier Automation", "Growth Hacking Infra"]
   },
 
   experience: [
