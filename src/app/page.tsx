@@ -3,6 +3,7 @@ import { Hero } from "@/components/Hero";
 import { Section } from "@/components/Section";
 import { BentoGrid } from "@/components/BentoGrid";
 import { RivavaPlus } from "@/components/RivavaPlus";
+import { TechMarquee } from "@/components/TechMarquee";
 import { portfolioData } from "@/data/portfolio";
 import { Mail, Github, Linkedin, ExternalLink } from "lucide-react";
 
@@ -33,6 +34,8 @@ export default function Home() {
       </Section>
 
       <RivavaPlus />
+
+      <TechMarquee />
 
       <Section title="Crafted Works" id="work">
         <BentoGrid items={portfolioData.projects} />
