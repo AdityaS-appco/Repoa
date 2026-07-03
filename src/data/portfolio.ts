@@ -7,7 +7,7 @@ export const portfolioData = {
   linkedin: "https://linkedin.com/in/aditya-singh-524a04360",
   website: "https://rivava.in",
   profileImage: "/aditya.png",
-  bio: "CTO at Rivava. Architecting high-performance financial ecosystems with 5+ years of expertise. Specializing in institutional-grade research platforms, automated growth infrastructures, and cross-platform mobile engineering. Bridging the gap between complex financial logic and seamless user experience.",
+  bio: "Invest only after you understand the research. CTO at Rivava, architecting high-performance financial ecosystems. Specializing in institutional-grade research platforms, automated growth infrastructures, and the 'Research -> Learn -> Invest -> Track' philosophy.",
 
   skills: {
     core: ["Flutter & Dart", "React & Next.js", "Node.js", "MERN Stack"],
