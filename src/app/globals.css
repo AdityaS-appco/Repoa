@@ -16,6 +16,11 @@ body {
   font-family: 'Inter', system-ui, sans-serif;
   overflow-x: hidden;
   scroll-behavior: smooth;
+  letter-spacing: -0.02em;
+}
+
+h1, h2, h3, h4 {
+  letter-spacing: -0.05em;
 }
 
 ::selection {
