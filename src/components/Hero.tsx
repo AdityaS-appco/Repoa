@@ -13,12 +13,12 @@ export const Hero = () => {
   return (
     <section className="relative h-screen flex items-center justify-center overflow-hidden bg-black">
       <motion.div style={{ y: y1, opacity }} className="relative z-10 text-center px-6">
-        <div className="relative w-32 h-32 md:w-48 md:h-48 mx-auto mb-8 rounded-full border-2 border-white/10 p-2 overflow-hidden">
+        <div className="relative w-48 h-48 md:w-64 md:h-64 mx-auto mb-8 rounded-full border-4 border-blue-500/50 p-2 overflow-hidden shadow-[0_0_50px_rgba(59,130,246,0.3)]">
           <Image
-            src={"adity.png"}
-            alt={portfolioData.name} 
+            src={portfolioData.profileImage}
+            alt={portfolioData.name}
             fill
-            className="object-cover rounded-full grayscale hover:grayscale-0 transition-all duration-700"
+            className="object-cover rounded-full transition-all duration-700"
             priority
           />
         </div>
