@@ -13,17 +13,23 @@ export const Hero = () => {
   return (
     <section className="relative h-screen flex items-center justify-center overflow-hidden bg-black">
       <motion.div style={{ y: y1, opacity }} className="relative z-10 text-center px-6">
-        <div className="relative w-48 h-48 md:w-64 md:h-64 mx-auto mb-8 rounded-full border-4 border-blue-500/50 p-2 overflow-hidden shadow-[0_0_50px_rgba(59,130,246,0.3)]">
-          <Image
-            src={portfolioData.profileImage}
-            alt={portfolioData.name}
-            fill
-            className="object-cover rounded-full transition-all duration-700"
-            priority
-          />
+        <div className="relative w-56 h-56 md:w-80 md:h-80 mx-auto mb-12 group">
+          <div className="absolute inset-0 bg-blue-500 rounded-full blur-3xl opacity-20 group-hover:opacity-40 transition-opacity duration-1000" />
+          <div className="relative h-full w-full rounded-full border-2 border-white/10 p-4 bg-black overflow-hidden">
+            <Image
+              src={portfolioData.profileImage}
+              alt={portfolioData.name}
+              fill
+              className="object-cover rounded-full transition-transform duration-1000 group-hover:scale-110"
+              priority
+            />
+          </div>
+          <div className="absolute -bottom-4 -right-4 w-20 h-20 bg-blue-600 rounded-2xl flex items-center justify-center border border-white/20 shadow-2xl rotate-12">
+             <Image src="/rivava-logo.png" alt="Rivava" width={40} height={40} className="object-contain" />
+          </div>
         </div>
-        <h1 className="text-6xl md:text-9xl font-black tracking-tighter mb-4">
-          {portfolioData.name.split(' ')[0]} <span className="text-blue-500">{portfolioData.name.split(' ')[1]}</span>
+        <h1 className="text-7xl md:text-[12rem] font-black tracking-tighter mb-4 leading-[0.8] text-gradient">
+          {portfolioData.name.split(' ')[0]} <br /> {portfolioData.name.split(' ')[1]}
         </h1>
         <p className="text-lg md:text-2xl font-mono text-gray-500 uppercase tracking-widest max-w-2xl mx-auto">
           {portfolioData.role}

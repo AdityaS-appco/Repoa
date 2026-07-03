@@ -19,8 +19,33 @@ body {
   letter-spacing: -0.02em;
 }
 
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://grainy-gradients.vercel.app/noise.svg");
+  opacity: 0.05;
+  pointer-events: none;
+  z-index: 9999;
+}
+
 h1, h2, h3, h4 {
   letter-spacing: -0.05em;
+}
+
+.glass-morphism {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.text-gradient {
+  background: linear-gradient(to right, #ffffff, #666666);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 ::selection {
