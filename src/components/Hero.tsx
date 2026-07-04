@@ -3,6 +3,7 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { portfolioData } from "@/data/portfolio";
 import { Github, Linkedin, Mail } from "lucide-react";
+import Image from "next/image";
 
 export const Hero = () => {
   const { scrollY } = useScroll();
@@ -73,10 +74,13 @@ export const Hero = () => {
               {/* Image Frame */}
               <div className="absolute inset-0 bg-gradient-to-br from-blue-600 to-transparent rounded-[3rem] blur-2xl opacity-20 animate-pulse" />
               <div className="relative h-full w-full rounded-[3rem] border border-white/10 bg-[#111] p-4 overflow-hidden group shadow-2xl">
-                <img
+                <Image
                   src="/aditya.png"
                   alt={portfolioData.name}
-                  className="w-full h-full object-cover rounded-[2rem] transition-transform duration-700 group-hover:scale-110"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 500px"
+                  className="object-cover rounded-[2rem] transition-transform duration-700 group-hover:scale-110"
+                  priority
                 />
 
                 {/* Floating Badge */}
