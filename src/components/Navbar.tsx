@@ -15,7 +15,7 @@ export const Navbar = () => {
       <div className="container mx-auto px-6 py-4 flex justify-between items-center">
         <Link href="/" className="flex items-center space-x-3 group">
           <div className="relative w-10 h-10 rounded-lg overflow-hidden border border-white/10 group-hover:border-blue-500 transition-colors">
-            <Image src="/rivava-logo.png" alt="Rivava Logo" fill className="object-contain p-1" />
+            <Image src="rivava-logo.png" alt="rivava-logo.png" fill className="object-contain p-1" />
           </div>
           <span className="text-xl font-black tracking-tighter uppercase group-hover:text-blue-500 transition-colors">
             {portfolioData.name.toUpperCase()}
