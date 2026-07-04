@@ -3,7 +3,7 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { portfolioData } from "@/data/portfolio";
 import { Github, Linkedin, Mail } from "lucide-react";
-import Image from "next/image"; // Imported for Next.js image optimization
+import Image from "next/image";
 
 export const Hero = () => {
   const { scrollY } = useScroll();
@@ -74,14 +74,13 @@ export const Hero = () => {
               {/* Image Frame */}
               <div className="absolute inset-0 bg-gradient-to-br from-blue-600 to-transparent rounded-[3rem] blur-2xl opacity-20 animate-pulse" />
               <div className="relative h-full w-full rounded-[3rem] border border-white/10 bg-[#111] p-4 overflow-hidden group shadow-2xl">
-                
-                {/* Fixed and optimized Next.js Image Component */}
                 <Image
-                  src="https://github.com/AdityaS-appco/Repoa/blob/main/public/aditya.png"
+                  src="/aditya.png"
                   alt={portfolioData.name}
                   fill
+                  sizes="(max-width: 768px) 100vw, 500px"
+                  className="object-cover rounded-[2rem] transition-transform duration-700 group-hover:scale-110"
                   priority
-                  className="object-cover p-4 rounded-[3rem] transition-transform duration-700 group-hover:scale-110"
                 />
 
                 {/* Floating Badge */}
