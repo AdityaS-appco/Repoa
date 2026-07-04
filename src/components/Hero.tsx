@@ -76,6 +76,7 @@ export const Hero = () => {
               <div className="relative h-full w-full rounded-[3rem] border border-white/10 bg-[#111] p-4 overflow-hidden group shadow-2xl">
                 <Image
                   src="aditya.png"
+                  alt="aditya.png"
                   fill
                   sizes="(max-width: 768px) 100vw, 500px"
                   className="object-cover rounded-[2rem] transition-transform duration-700 group-hover:scale-110"
