@@ -4,12 +4,14 @@ import { Section } from "@/components/Section";
 import { BentoGrid } from "@/components/BentoGrid";
 import { RivavaPlus } from "@/components/RivavaPlus";
 import { TechMarquee } from "@/components/TechMarquee";
+import { CustomCursor } from "@/components/CustomCursor";
 import { portfolioData } from "@/data/portfolio";
 import { Mail, Github, Linkedin, ExternalLink } from "lucide-react";
 
 export default function Home() {
   return (
     <main className="bg-black text-white">
+      <CustomCursor />
       <Navbar />
       <Hero />
 

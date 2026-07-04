@@ -8,10 +8,10 @@ export const BentoGrid = ({ items }: { items: any[] }) => {
       {items.map((item, i) => (
         <motion.div
           key={i}
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ delay: i * 0.1 }}
+          initial={{ opacity: 0, scale: 0.9 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: true, margin: "-50px" }}
+          transition={{ type: "spring", stiffness: 100, damping: 20, delay: i * 0.1 }}
           className={i === 0 ? "md:col-span-2 md:row-span-2" : ""}
         >
           <div className="group relative h-full min-h-[300px] rounded-3xl border border-white/5 bg-white/5 p-8 overflow-hidden hover:border-blue-500/50 transition-all">
