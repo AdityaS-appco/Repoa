@@ -90,7 +90,7 @@ export const Hero = () => {
                     <p className="text-sm font-bold text-white uppercase">{portfolioData.role.split('&')[0]}</p>
                   </div>
                   <div className="relative w-10 h-10">
-                    <Image src="/rivava-logo.png" alt="Rivava" fill className="object-contain" />
+                    <Image src="/rivava-logo.png" alt="/rivava-logo.png" fill className="object-contain" />
                   </div>
                 </div>
               </div>
