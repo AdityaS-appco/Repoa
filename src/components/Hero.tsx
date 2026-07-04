@@ -3,6 +3,7 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { portfolioData } from "@/data/portfolio";
 import { Github, Linkedin, Mail } from "lucide-react";
+import Image from "next/image"; // Imported for Next.js image optimization
 
 export const Hero = () => {
   const { scrollY } = useScroll();
@@ -51,10 +52,10 @@ export const Hero = () => {
                   LET'S TALK
                 </a>
                 <div className="flex items-center space-x-4">
-                  <a href={portfolioData.github} target="_blank" className="p-4 rounded-full border border-white/10 hover:bg-white/5 transition-colors">
+                  <a href={portfolioData.github} target="_blank" rel="noopener noreferrer" className="p-4 rounded-full border border-white/10 hover:bg-white/5 transition-colors">
                     <Github className="w-6 h-6" />
                   </a>
-                  <a href={portfolioData.linkedin} target="_blank" className="p-4 rounded-full border border-white/10 hover:bg-white/5 transition-colors">
+                  <a href={portfolioData.linkedin} target="_blank" rel="noopener noreferrer" className="p-4 rounded-full border border-white/10 hover:bg-white/5 transition-colors">
                     <Linkedin className="w-6 h-6" />
                   </a>
                 </div>
@@ -73,19 +74,25 @@ export const Hero = () => {
               {/* Image Frame */}
               <div className="absolute inset-0 bg-gradient-to-br from-blue-600 to-transparent rounded-[3rem] blur-2xl opacity-20 animate-pulse" />
               <div className="relative h-full w-full rounded-[3rem] border border-white/10 bg-[#111] p-4 overflow-hidden group shadow-2xl">
-                <img
+                
+                {/* Fixed and optimized Next.js Image Component */}
+                <Image
                   src="/aditya.png"
                   alt={portfolioData.name}
-                  className="w-full h-full object-cover rounded-[2rem] transition-transform duration-700 group-hover:scale-110"
+                  fill
+                  priority
+                  className="object-cover p-4 rounded-[3rem] transition-transform duration-700 group-hover:scale-110"
                 />
 
                 {/* Floating Badge */}
-                <div className="absolute bottom-8 left-8 right-8 glass-morphism p-6 rounded-2xl border border-white/10 flex items-center justify-between">
+                <div className="absolute bottom-8 left-8 right-8 glass-morphism p-6 rounded-2xl border border-white/10 flex items-center justify-between z-10">
                   <div>
                     <p className="text-[10px] font-black uppercase tracking-widest text-blue-400 mb-1">Position</p>
                     <p className="text-sm font-bold text-white uppercase">{portfolioData.role.split('&')[0]}</p>
                   </div>
-                  <img src="/rivava-logo.png" alt="Rivava" className="w-10 h-10 object-contain" />
+                  <div className="relative w-10 h-10">
+                    <Image src="/rivava-logo.png" alt="Rivava" fill className="object-contain" />
+                  </div>
                 </div>
               </div>
             </motion.div>
