@@ -75,7 +75,7 @@ export const Hero = () => {
               <div className="absolute inset-0 bg-gradient-to-br from-blue-600 to-transparent rounded-[3rem] blur-2xl opacity-20 animate-pulse" />
               <div className="relative h-full w-full rounded-[3rem] border border-white/10 bg-[#111] p-4 overflow-hidden group shadow-2xl">
                 <Image
-                  src="/aditya.png"
+                  src="aditya.png"
                   alt={portfolioData.name}
                   fill
                   sizes="(max-width: 768px) 100vw, 500px"
