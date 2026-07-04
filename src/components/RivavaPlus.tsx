@@ -34,7 +34,7 @@ export const RivavaPlus = () => {
               >
                 <div className="flex items-center space-x-4 mb-6">
                   <div className="relative w-16 h-16 rounded-2xl overflow-hidden bg-white/10 p-2 border border-white/20">
-                    <Image src="rivava-logo.png"  alt="/rivava-logo.png" fill className="object-contain" />
+                    <Image src="rivava-logo.png"  alt="rivava-logo.png" fill className="object-contain" />
                   </div>
                   <span className="text-sm font-black tracking-[0.2em] text-blue-400">OFFICIAL APP</span>
                 </div>
