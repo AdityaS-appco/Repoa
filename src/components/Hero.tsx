@@ -77,7 +77,7 @@ export const Hero = () => {
                 
                 {/* Fixed and optimized Next.js Image Component */}
                 <Image
-                  src="/aditya.png"
+                  src="https://github.com/AdityaS-appco/Repoa/blob/main/public/aditya.png"
                   alt={portfolioData.name}
                   fill
                   priority
