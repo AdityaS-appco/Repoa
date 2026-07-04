@@ -75,8 +75,8 @@ export const Hero = () => {
               <div className="absolute inset-0 bg-gradient-to-br from-blue-600 to-transparent rounded-[3rem] blur-2xl opacity-20 animate-pulse" />
               <div className="relative h-full w-full rounded-[3rem] border border-white/10 bg-[#111] p-4 overflow-hidden group shadow-2xl">
                 <Image
-                  src="aditya.png"
-                  alt="aditya.png"
+                  src="/aditya.png"
+                  alt="/aditya.png"
                   fill
                   sizes="(max-width: 768px) 100vw, 500px"
                   className="object-cover rounded-[2rem] transition-transform duration-700 group-hover:scale-110"
@@ -89,9 +89,7 @@ export const Hero = () => {
                     <p className="text-[10px] font-black uppercase tracking-widest text-blue-400 mb-1">Position</p>
                     <p className="text-sm font-bold text-white uppercase">{portfolioData.role.split('&')[0]}</p>
                   </div>
-                  <div className="relative w-10 h-10">
-                    <Image src="rivava-logo.png" alt="rivava-logo.png" fill className="object-contain" />
-                  </div>
+                  <img src="/rivava-logo.png" alt="/rivava-logo.png" className="w-10 h-10 object-contain" />
                 </div>
               </div>
             </motion.div>
