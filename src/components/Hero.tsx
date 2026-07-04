@@ -52,10 +52,10 @@ export const Hero = () => {
                   LET'S TALK
                 </a>
                 <div className="flex items-center space-x-4">
-                  <a href={portfolioData.github} target="_blank" rel="noopener noreferrer" className="p-4 rounded-full border border-white/10 hover:bg-white/5 transition-colors">
+                  <a href={portfolioData.github} target="_blank" className="p-4 rounded-full border border-white/10 hover:bg-white/5 transition-colors">
                     <Github className="w-6 h-6" />
                   </a>
-                  <a href={portfolioData.linkedin} target="_blank" rel="noopener noreferrer" className="p-4 rounded-full border border-white/10 hover:bg-white/5 transition-colors">
+                  <a href={portfolioData.linkedin} target="_blank" className="p-4 rounded-full border border-white/10 hover:bg-white/5 transition-colors">
                     <Linkedin className="w-6 h-6" />
                   </a>
                 </div>
@@ -84,7 +84,7 @@ export const Hero = () => {
                 />
 
                 {/* Floating Badge */}
-                <div className="absolute bottom-8 left-8 right-8 glass-morphism p-6 rounded-2xl border border-white/10 flex items-center justify-between z-10">
+                <div className="absolute bottom-8 left-8 right-8 glass-morphism p-6 rounded-2xl border border-white/10 flex items-center justify-between">
                   <div>
                     <p className="text-[10px] font-black uppercase tracking-widest text-blue-400 mb-1">Position</p>
                     <p className="text-sm font-bold text-white uppercase">{portfolioData.role.split('&')[0]}</p>
